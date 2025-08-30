@@ -1,4 +1,4 @@
-# PROJETO Ordens de Serviço
+# PROJETO Gerenciador de Filmes
 
 ## Versões utilizadas para o desenvolvimento
 - Apache 2.4.62
