@@ -5,6 +5,9 @@
 - PHP 8.3.14
 - MySQL  8.3.14
 - Laravel 8.6.12
+- Teste Unitário
+	1.Jest
+	2.babel-jest
 
 # Instalação
 
@@ -61,4 +64,9 @@ O arquivo para criação das tabelas e importação do usuário para login, enco
 - O LOGIN e a SENHA são respectivamente: teste@email.com e 123456 
 - Se caso você possuir o servidor web Apache, copie todos os arquivos do projeto para o diretório root e acesse com o endereço de acordo com sua configuração, geralmente http://localhost
 
+## Testes
+- Para execução de testes na API, vá até a pasta ..\gerenciador_filmes\filmes_api e execute no terminal o comando:
+	1. "php artisan test";
+- Para execução de testes da interface, vá até a pasta ..\gerenciador_filmes\filmes_aui e execute no terminal o comando:
+	1. "npm test";
 
