@@ -12,7 +12,7 @@ jest.mock('react-router-dom', () => ({
 }));
 
 describe('Página de Login', () => {
-  it('deve chamar a função de login ao submeter o formulário com dados válidos', async () => {
+  it('Chama função de login com dados válidos', async () => {
     // Simula uma resposta de sucesso da API
     apiClient.post.mockResolvedValue({ 
         data: { 
@@ -36,14 +36,14 @@ describe('Página de Login', () => {
 
     // Simula digitação e o clique
     fireEvent.change(emailInput, { target: { value: 'teste@email.com' } });
-    fireEvent.change(passwordInput, { target: { value: 'password123' } });
+    fireEvent.change(passwordInput, { target: { value: '123456' } });
     fireEvent.click(submitButton);
 
     // Espera até que a chamada à API (simulada) tenha sido feita
     await waitFor(() => {
       expect(apiClient.post).toHaveBeenCalledWith('/login', {
         email: 'teste@email.com',
-        password: 'password123',
+        password: '123456',
       });
     });
   });
